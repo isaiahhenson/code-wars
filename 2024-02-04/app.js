@@ -5,25 +5,37 @@
 //If negitive add then return (number * number).
 //METHOD 2 - return the number * -1
 
-function inverse(integer) {
-  if (integer == 0) {
-    return 0;
-  }
-  if (integer > 0) {
-    console.log(integer - (integer + integer));
-  } else if (integer < 0) {
-    console.log(integer - (integer + integer));
-  }
+// function inverse(integer) {
+//   if (integer == 0) {
+//     return 0;
+//   }
+//   if (integer > 0) {
+//     console.log(integer - (integer + integer));
+//   } else if (integer < 0) {
+//     console.log(integer - (integer + integer));
+//   }
+// }
+
+// inverse(-5);
+
+// function inverse(integer) {
+//   if (integer == 0) {
+//     return 0;
+//   }
+//   if (integer > 0) {
+//     return integer - (integer + integer);
+//   } else if (integer < 0) {
+//     return integer - (integer + integer);
+//   }
+// }
+
+//a string will be entered
+//function will return a string reversed
+//'world'  =>  'dlrow'
+//enter the string, use the split method, revese method then the join method to reverse the string.
+
+function solution(str) {
+  console.log(str.split('').reverse().join(''));
 }
 
-inverse(-5);
-
-function inverse(integer) {
-    if (integer == 0) {
-    return 0;
-  }
-  if (integer > 0) {
-    return integer - (integer + integer);
-  } else if (integer < 0) {
-    return integer - (integer + integer)
-  }
+solution('Hello Isaiah');
