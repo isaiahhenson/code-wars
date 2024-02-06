@@ -34,8 +34,20 @@
 //'world'  =>  'dlrow'
 //enter the string, use the split method, revese method then the join method to reverse the string.
 
-function solution(str) {
-  console.log(str.split('').reverse().join(''));
+// function solution(str) {
+//   console.log(str.split('').reverse().join(''));
+// }
+
+// solution('Hello Isaiah');
+
+//this function will take in a boolean value of true or false
+//will return a string value of yes or no
+//    assert.strictEqual(boolToWord(true), 'Yes')
+//assert.strictEqual(boolToWord(false), 'No')
+// receive boolean if true return "Yes" else return "No"
+
+function boolToWord(bool) {
+  return bool ? 'Yes' : 'No';
 }
 
-solution('Hello Isaiah');
+boolToWord(true);
