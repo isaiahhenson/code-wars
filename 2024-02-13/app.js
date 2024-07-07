@@ -29,14 +29,14 @@
 //[34, 15, 88, 2] --> 2
 //Initialize a variable, set it to the first element in the array. them compare the remaining elements to that variable. If they are less then I will reassign the array.
 
-function findSmallestInt(args) {
-  let smallNum = args[0];
-  for (let i = 0; i < args.length; i++) {
-    if (args[i] < smallNum) {
-      smallNum = args[i];
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    let smallNum = args[0];
+    for (let i = 0; i < args.length; i++) {
+      if (args[i] < smallNum) {
+        smallNum = args[i];
+      }
     }
+    return smallNum;
   }
-  return smallNum;
 }
-
-findSmallestInt([78, 56, 232, 12, 0]);
